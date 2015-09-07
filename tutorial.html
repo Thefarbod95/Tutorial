@@ -10,24 +10,42 @@
 	
 	
 	<body>
+		<h1 style="color:darkgreen"> Tutorial i GitHub </h1>
+		<hr>
+		<!-- End of navigation -->
 		
-		<h3> Perfekt! </h3>
-		<h4> Nu har du ett repository på GitHub och nu vill du ha det på din dator så du kan börja jobba. </h4>
-		<h4> För att ladda ned repot till din dator måste du "klona" det. </h4>
-		<h4> Öppna ett ny fönster av GitShell. </h4>
-		<h4> Skriv nu in: git clone http://github.com/[ditt användarnamn]/[namnet på ditt repo] </h4>
-		<h4> Du kan även kopiera länken direkt från GitHub: </h4>
-		<h5> Gå in i ditt repo på <a href="http://github.com"> GitHub </a> och klicka på följande knapp: </h5>
-		<img src="images/clone_repo_URL.png" />
-		<h5> Sedan kan du gå tillbaka till GitShell och klistra in det: git clone [klistra in]</h5>
-		<h6> Om du skulle få error så är det bara klicka på pilen uppåt och försöka igen </h6>
+		<h3> Nu ska vi skapa en ny fil i din mapp eller rättare sagt, ditt repo.</h3>
+		<h4> Det gör vi med kommandot touch [filnamn]. </h4>
+		<h4> Så skapa filen gitTest.txt. (Alltså: touch gitTest.txt)</h4>
+		<h4> Bra! Nu kan vi dubbelkolla så att filen verkligen skapades. Det gör vi med kommandot ls. </h4>
+		<img src="images/ls.png" />
+		<h4> Kommandot ls listar alla mappar och filer som finns i den mappen du står i. </h4>
+		<h4> Vi kan se att det finns en fil som heter gitTest.txt som har lenght 0 alltså är den tom, eftersom vi nyss skapade den. </h4>
+		<h5> Nu ska du redigera den nyskapade filen. Gå in i utforskaren och öppna filen i valfritt redigeringsprogram. </h5>
+		<img src="images/edit_file.png" />
 		<br><br><h1> ... </h1><br><br>
-		<h3> Snyggt! </h3>
-		<h4> Nu har du ditt repo på din dator och kan börja arbeta. </h4>
-		<h4> För att komma in i ditt repo och utföra olika kommands måste du först skriva: cd [repo/mapp] </h4>
-		<h4> cd står för "Change Directory" och är ett linux-command. Om du har gjort rätt så ser din rad ut såhär i GitShell: </h4>
-		<img src="images/master.png" />
-		<h3> Gå nu in i det andra fönstret av GitShell och checka ut nästa version av detta repo! </h3>
+		<h3> Nu har du lagt till några rader i din fil. </h3>
+		<h4> Nu ska vi spara det i en commit så du och andra kan se vad som hänt med filen/koden. </h4>
+		<h4> Det gör vi genom att först lägga till filen till vår commit. Detta gör vi med kommandot git add [filnamn] </h4>
+		<img src="images/add.png" />
+		<h3> Nu har vi lagt till filen i vår commit som vi kommer göra.</h3>
+		<h4> En commit gör vi genom att skriva: git commit -m "[meddelande]" </h4>
+		<h6> (Man kan bara skriva git commit men då får man upp textredigeraren och får skriva ett meddelande där istället.) </h6>
+		<img src="images/commit.png" />
+		<h4> Nu har vi gjort en commit på endast flien gitTest.txt men vi har inte laddat upp det till vårat repo på GitHub. </h4>
+		<h4> Och det gör vi med kommandot git push. </h4>
+		<img src="images/push.png" />
+		<h6> Skulle du få error så är det bara att pila uppåt och försöka igen </h6>		
+		<h4 style="color:red"> Observera att det nu finns en footer med en länk till nyttiga git-kommandon! </h4>
+		<h4> Checka nu ut nästa version av detta repo och uppdatera sidan. </h4>
+
+		
+		
+		<!-- Footer -->
+		<hr>
+		<center>
+		<a href="https://docs.google.com/document/d/1h1IZYeSg2OGMdK5aArc9esqpdPZD8Glh7wHmxF2_DrE" target="_BLANK"> Git commands</a><br>
+		</center>
 	</body>
 
 </html>
